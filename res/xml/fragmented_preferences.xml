@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceScreen android:title="@string/connection_settings"><EditTextPreference android:title="@string/ip_address" android:defaultValue="192.168.1.128" android:key="ip" /><EditTextPreference android:title="@string/port" android:defaultValue="1083" android:key="port" /><EditTextPreference android:key="timeout" android:title="@string/timeout" android:defaultValue="6000" /></PreferenceScreen>
+    
+    
+    
+    
+
+</PreferenceScreen>
