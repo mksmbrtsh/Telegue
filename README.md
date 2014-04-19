@@ -32,9 +32,6 @@ gst-launch -v v4l2src always-copy=false chain-ipipe=true ! \
 ```
 * Copy your caps from log, and set it in '/jni/gst.c' app_function method.
 [Modify caps](http://stackoverflow.com/questions/18511765/gstreamer-in-android-udp-stream):
-'''
-udpsrc port=8888 caps=\"application/x-rtp, media=video, clock-rate=90000, encoding-name=H264, sprop-parameter-sets=\\\"J2QAFKwrQLj/LwDxImo\\\\=\\\\,KO4fLA\\\\=\\\\=\\\"\", payload=96\" ! ...
-'''
 without type conversion (***)
 
 ## Build
@@ -46,15 +43,15 @@ without type conversion (***)
 ### settings
 C/C++ Build
 Build Variables:
-Name           | Type     | Value
----------------|----------|-----------------------------------------------------
-GSTREAMER_ROOT | Directory| PATH TO YOUR gstreamer-1.0-android-arm-1.2.3-release
-NDK            | String   | PATH TO YOUR android-ndk-r9d
+|Name           | Type     | Value                                               |
+|---------------|----------|-----------------------------------------------------|
+|GSTREAMER_ROOT | Directory| PATH TO YOUR gstreamer-1.0-android-arm-1.2.3-release|
+|NDK            | String   | PATH TO YOUR android-ndk-r9d                        |
 Enviroment:
-Name                      | Value            | Origin
---------------------------|------------------|------------
-GSTREAMER_NDK_BUILD_PATH  | ${NDK}           | USER:CONFIG
-GSTREAMER_SDK_ROOT_ANDROID| ${GSTREAMER_ROOT}| USER:CONFIG
+|Name                      | Value            | Origin     |
+|--------------------------|------------------|------------|
+|GSTREAMER_NDK_BUILD_PATH  | ${NDK}           | USER:CONFIG|
+|GSTREAMER_SDK_ROOT_ANDROID| ${GSTREAMER_ROOT}| USER:CONFIG|
 
 ### Project base
 1. autobahn-0.5.0.jar - The WebSocket Protocol support https://github.com/tavendo/AutobahnAndroid and jackson-core-asl-1.9.7.jar and jackson-mapper-asl-1.9.7.jar
