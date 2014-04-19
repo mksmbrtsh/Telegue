@@ -12,6 +12,7 @@
 bin/
 gen/
 obj/
+armeabi/
 gst-build/
 gst-build-armeabi/
 

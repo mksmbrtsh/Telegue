@@ -1,0 +1,9 @@
+gst-launch -v v4l2src always-copy=false chain-ipipe=true ! \
+   video/x-raw-yuv,format='(fourcc)'NV12, width=640, height=480, framerate='(fraction)'30/1 ! \
+   dmaiaccel ! \
+   dmaienc_h264 ddrbuf=true encodingpreset=2 ratecontrol=4 targetbitrate=600000 ! \
+   rtph264pay !  queue ! \
+   udpsink port=8888 host=192.168.1.185 sync=false
+
+ caps = application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, sprop-parameter-sets=(string)\"Z2QAKK2EBUViuKxUdCAqKxXFYqOhAVFYrisVHQgKisVxWKjoQFRWK4rFR0ICorFcVio6ECSFITk8nyfk/k/J8nm5s00IEkKQnJ5Pk/J/J+T5PNzZprQFAeyA\\,aO48sA\\=\\=\", payload=(int)96, ssrc=(uint)3211086628, clock-base=(uint)560469628, seqnum-base=(uint)28985
+
