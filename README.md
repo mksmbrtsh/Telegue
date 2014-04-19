@@ -43,15 +43,15 @@ without type conversion (***)
 ### settings
 C/C++ Build
 Build Variables:
-|Name           | Type     | Value                                               |
-|---------------|----------|-----------------------------------------------------|
-|GSTREAMER_ROOT | Directory| PATH TO YOUR gstreamer-1.0-android-arm-1.2.3-release|
-|NDK            | String   | PATH TO YOUR android-ndk-r9d                        |
+| Name           | Type      | Value                                                 |
+| -------------- | --------- | ----------------------------------------------------- |
+| GSTREAMER_ROOT | Directory | PATH TO YOUR gstreamer-1.0-android-arm-1.2.3-release  |
+| NDK            | String    | PATH TO YOUR android-ndk-r9d                          |
 Enviroment:
-|Name                      | Value            | Origin     |
-|--------------------------|------------------|------------|
-|GSTREAMER_NDK_BUILD_PATH  | ${NDK}           | USER:CONFIG|
-|GSTREAMER_SDK_ROOT_ANDROID| ${GSTREAMER_ROOT}| USER:CONFIG|
+| Name                        | Value              | Origin      |
+| --------------------------- | ------------------ | ----------- |
+| GSTREAMER_NDK_BUILD_PATH    | ${NDK}             | USER:CONFIG |
+| GSTREAMER_SDK_ROOT_ANDROID  | ${GSTREAMER_ROOT}  | USER:CONFIG |
 
 ### Project base
 1. autobahn-0.5.0.jar - The WebSocket Protocol support https://github.com/tavendo/AutobahnAndroid and jackson-core-asl-1.9.7.jar and jackson-mapper-asl-1.9.7.jar
