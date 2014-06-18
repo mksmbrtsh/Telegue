@@ -64,3 +64,6 @@ C/C++ Build
 1. autobahn-0.5.0.jar - The WebSocket Protocol support https://github.com/tavendo/AutobahnAndroid and jackson-core-asl-1.9.7.jar and jackson-mapper-asl-1.9.7.jar
 2. TrackJoystickView - to motor control. https://github.com/mksmbrtsh/TrackJoystickView
 3. [gstreamer1.0](http://gstreamer.com/)
+
+### Tamiya base chassis project
+https://grabcad.com/library/tamiya-chassis-1
